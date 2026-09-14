@@ -61,7 +61,7 @@
   "errors": {
     "invalidCredentials": "The email or password you entered is incorrect.",
     "emptyEmail": "Email is required.",
-    "emptyPassword": "Password is required.",
+    "emptyPassword": "Please enter your password.",
     "weakPassword": "Password must be at least 8 characters long.",
     "accountLocked": "This account has been temporarily locked. Please try again later."
   },
