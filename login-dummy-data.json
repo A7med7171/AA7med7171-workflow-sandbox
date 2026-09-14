@@ -1,0 +1,72 @@
+{
+  "page": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to continue to your workspace",
+    "brand": "Northstar Labs",
+    "rememberMeLabel": "Keep me signed in",
+    "forgotPasswordText": "Forgot password?",
+    "submitButton": "Sign in",
+    "signupText": "Need an account?",
+    "signupLink": "Create one"
+  },
+  "validation": {
+    "email": {
+      "required": true,
+      "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+    },
+    "password": {
+      "required": true,
+      "minLength": 8,
+      "maxLength": 128
+    }
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Ava Thompson",
+      "email": "ava.thompson@example.com",
+      "password": "Password123!",
+      "role": "Product Manager",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Ava%20Thompson"
+    },
+    {
+      "id": 2,
+      "name": "Lucas Chen",
+      "email": "lucas.chen@example.com",
+      "password": "SecurePass4#",
+      "role": "Frontend Engineer",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Lucas%20Chen"
+    },
+    {
+      "id": 3,
+      "name": "Maya Patel",
+      "email": "maya.patel@example.com",
+      "password": "Maya@2026",
+      "role": "Operations Lead",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Maya%20Patel"
+    },
+    {
+      "id": 4,
+      "name": "Noah Brooks",
+      "email": "noah.brooks@example.com",
+      "password": "Noah!Pass9",
+      "role": "Customer Success",
+      "status": "inactive",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Noah%20Brooks"
+    }
+  ],
+  "errors": {
+    "invalidCredentials": "The email or password you entered is incorrect.",
+    "emptyEmail": "Email is required.",
+    "emptyPassword": "Password is required.",
+    "weakPassword": "Password must be at least 8 characters long.",
+    "accountLocked": "This account has been temporarily locked. Please try again later."
+  },
+  "success": {
+    "redirectUrl": "/dashboard",
+    "welcomeMessage": "Welcome back, {name}!"
+  }
+}
