@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wander Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand-wrap">
+          <div class="brand-mark">WN</div>
+          <span>Wander Notes</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#">Travel</a>
+          <a href="#">Lifestyle</a>
+          <a href="#">Journal</a>
+          <a href="#">About</a>
+        </nav>
+        <button class="nav-button">Subscribe</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Weekly Dispatch</p>
+            <h1>Stories, slow travel, and everyday inspiration.</h1>
+            <p class="lede">
+              Explore thoughtful notes from the road, creative routines, and the quiet moments that make a life feel full.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#latest">Read the latest</a>
+              <a class="secondary-btn" href="#about">Meet the editor</a>
+            </div>
+            <ul class="stats" aria-label="Blog statistics">
+              <li><strong>12k+</strong><span>readers</span></li>
+              <li><strong>84</strong><span>stories</span></li>
+              <li><strong>4.9</strong><span>average rating</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Featured post preview">
+            <div class="card-image"></div>
+            <div class="card-body">
+              <span class="tag">Featured</span>
+              <h2>Learning to love the in-between places</h2>
+              <p>On train rides, coffee shop windows, and the gentle rhythm of a life in motion.</p>
+              <div class="meta-row">
+                <span>May 18</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content container" id="latest">
+        <div class="posts">
+          <article class="post-card">
+            <div class="post-image image-one"></div>
+            <div class="post-body">
+              <span class="tag travel">Travel</span>
+              <h3>Three cities, one unforgettable weekend</h3>
+              <p>From hidden cafés to midnight walks, here’s how I found the heart of a trip in the details.</p>
+              <div class="meta-row">
+                <span>April 22</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image image-two"></div>
+            <div class="post-body">
+              <span class="tag journal">Journal</span>
+              <h3>My morning ritual for a calmer creative life</h3>
+              <p>Simple rituals, better attention, and a slower start that makes room for ideas to arrive.</p>
+              <div class="meta-row">
+                <span>April 09</span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image image-three"></div>
+            <div class="post-body">
+              <span class="tag lifestyle">Lifestyle</span>
+              <h3>What I keep in my weekend bag</h3>
+              <p>Little essentials, practical comforts, and the small rituals that turn a free day into something memorable.</p>
+              <div class="meta-row">
+                <span>March 28</span>
+                <span>3 min read</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="sidebar">
+          <div class="side-card about-card" id="about">
+            <h3>About the writer</h3>
+            <p>
+              I’m Mara, a curious traveler and storyteller collecting notes from the places and people that shape me.
+            </p>
+          </div>
+
+          <div class="side-card newsletter">
+            <h3>Join the newsletter</h3>
+            <p>Fresh essays and favorite finds once a week.</p>
+            <form>
+              <input type="email" placeholder="Email address" aria-label="Email address" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+
+          <div class="side-card popular">
+            <h3>Popular reads</h3>
+            <ul>
+              <li><a href="#">The beauty of unplanned afternoons</a></li>
+              <li><a href="#">How I pack for slow weekends</a></li>
+              <li><a href="#">Notes from the coastal train</a></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
