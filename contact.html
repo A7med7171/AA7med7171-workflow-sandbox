@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Wander Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .contact-page {
+        min-height: calc(100vh - 76px);
+        padding: 64px 0 80px;
+      }
+
+      .contact-layout {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 48px;
+        align-items: start;
+      }
+
+      .contact-intro h1 {
+        margin: 0;
+        max-width: 480px;
+        font-size: clamp(2.6rem, 6vw, 4.8rem);
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+      }
+
+      .contact-intro > p:not(.eyebrow) {
+        max-width: 430px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .contact-details {
+        display: grid;
+        gap: 14px;
+        margin-top: 34px;
+      }
+
+      .contact-detail {
+        padding: 17px 18px;
+        border-left: 3px solid var(--accent);
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      .contact-detail strong,
+      .contact-detail span {
+        display: block;
+      }
+
+      .contact-detail strong {
+        margin-bottom: 4px;
+        font-size: 0.88rem;
+      }
+
+      .contact-detail span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .contact-form {
+        padding: 34px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .contact-form h2 {
+        margin: 0 0 24px;
+        font-size: 1.6rem;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .field {
+        display: grid;
+        gap: 8px;
+      }
+
+      .field.full-width {
+        grid-column: 1 / -1;
+      }
+
+      .field label {
+        font-size: 0.86rem;
+        font-weight: 600;
+      }
+
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        border: 1px solid rgba(29, 26, 23, 0.14);
+        border-radius: 12px;
+        padding: 0.9rem 1rem;
+        color: var(--ink);
+        background: #fffdfa;
+        outline: none;
+      }
+
+      .field input:focus,
+      .field select:focus,
+      .field textarea:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(182, 106, 73, 0.14);
+      }
+
+      .field textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      .form-note {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 0.8rem;
+        line-height: 1.5;
+      }
+
+      .contact-form button {
+        margin-top: 22px;
+        border: 0;
+        cursor: pointer;
+      }
+
+      @media (max-width: 760px) {
+        .contact-layout {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+      }
+
+      @media (max-width: 540px) {
+        .contact-page {
+          padding-top: 42px;
+        }
+
+        .contact-form {
+          padding: 25px 20px;
+        }
+
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .field.full-width {
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand-wrap" href="index.html" aria-label="Wander Notes home">
+          <div class="brand-mark">WN</div>
+          <span>Wander Notes</span>
+        </a>
+        <a class="secondary-btn" href="index.html">Back home</a>
+      </div>
+    </header>
+
+    <main class="contact-page">
+      <div class="container contact-layout">
+        <section class="contact-intro" aria-labelledby="contact-title">
+          <p class="eyebrow">Get in touch</p>
+          <h1 id="contact-title">Let’s start a conversation.</h1>
+          <p>Have a story idea, a thoughtful question, or a favorite hidden place to share? I’d love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <strong>Email</strong>
+              <span>hello@wandernotes.example</span>
+            </div>
+            <div class="contact-detail">
+              <strong>Response time</strong>
+              <span>Usually within 2–3 business days</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-form" aria-labelledby="form-title">
+          <h2 id="form-title">Send a message</h2>
+          <form action="#" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Mara Ellis" required />
+              </div>
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+              </div>
+              <div class="field full-width">
+                <label for="topic">What can I help with?</label>
+                <select id="topic" name="topic">
+                  <option value="story-idea">Story idea</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="reader-note">Reader note</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+              <div class="field full-width">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" placeholder="Write your note here..." required></textarea>
+              </div>
+            </div>
+            <p class="form-note">This is a demo form and does not send messages yet.</p>
+            <button class="primary-btn" type="submit">Send message</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
