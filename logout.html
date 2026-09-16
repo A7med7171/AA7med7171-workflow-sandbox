@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signed out | Wander Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .logout-page {
+        min-height: calc(100vh - 76px);
+        display: grid;
+        place-items: center;
+        padding: 48px 0;
+      }
+
+      .logout-card {
+        width: min(100%, 520px);
+        padding: 48px 42px;
+        text-align: center;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .logout-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 22px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #e5f0eb;
+        color: #2f6858;
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
+
+      .logout-card h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: -0.05em;
+      }
+
+      .logout-card p {
+        margin: 14px auto 0;
+        max-width: 380px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .logout-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      @media (max-width: 540px) {
+        .logout-card {
+          padding: 36px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand-wrap" href="index.html" aria-label="Wander Notes home">
+          <div class="brand-mark">WN</div>
+          <span>Wander Notes</span>
+        </a>
+        <a class="secondary-btn" href="index.html">Back home</a>
+      </div>
+    </header>
+
+    <main class="logout-page">
+      <section class="logout-card" aria-labelledby="logout-title">
+        <div class="logout-icon" aria-hidden="true">✓</div>
+        <p class="eyebrow">Session ended</p>
+        <h1 id="logout-title">You’re signed out.</h1>
+        <p>Your account has been safely signed out. Come back whenever you’re ready for your next story.</p>
+        <div class="logout-actions">
+          <a class="primary-btn" href="index.html">Return to Wander Notes</a>
+          <a class="secondary-btn" href="#">Sign in again</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
